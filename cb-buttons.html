@@ -1,0 +1,10 @@
+<template name="afCheckboxGroup_buttonGroup">
+  <div class="btn-group af-checkbox-group" data-toggle="buttons" {{dsk}}>
+    {{#each this.items}}
+      <label class="btn btn-default {{#if this.selected}}active{{/if}}">
+        <input type="checkbox" value="{{this.value}}" {{atts}} />
+        {{this.label}}
+      </label>
+    {{/each}}
+  </div>
+</template>
