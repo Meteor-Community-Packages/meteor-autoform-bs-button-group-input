@@ -1,0 +1,18 @@
+<template name="afBooleanRadioGroup_buttonGroup">
+    <div class="btn-group af-radio-group" data-toggle="buttons" {{dsk}}>
+        <label class="btn btn-default {{#if isTrue}}active{{/if}}">
+            <input type="radio" value="true"  {{trueAtts}} name="{{this.name}}" />
+          {{#with this.atts.trueLabel}}{{this}}{{else}}True{{/with}}
+        </label>
+        <label class="btn btn-default {{#if isFalse}}active{{/if}}">
+            <input type="radio" value="false"  {{falseAtts}} name="{{this.name}}" />
+          {{#with this.atts.falseLabel}}{{this}}{{else}}False{{/with}}
+        </label>
+      {{#with this.atts.nullLabel}}
+          <label class="btn btn-default {{#if isNull}}active{{/if}}">
+              <input type="radio" value="" name="{{../name}}" {{nullAtts}} />
+            {{this}}
+          </label>
+      {{/with}}
+    </div>
+</template>
