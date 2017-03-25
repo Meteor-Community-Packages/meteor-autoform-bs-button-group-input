@@ -13,6 +13,8 @@ Package.onUse(function(api) {
     'cb-buttons.html',
     'cb-buttons.js',
     'rad-buttons.html',
-    'rad-buttons.js'
+    'rad-buttons.js',
+    'bool-rad-buttons.html',
+    'bool-rad-buttons.js'
   ], 'client');
 });
