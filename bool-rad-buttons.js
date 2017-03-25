@@ -1,4 +1,4 @@
-Template["afBooleanRadioGroup_buttonGroup"].helpers({
+Template.afBooleanRadioGroup_buttonGroup.helpers({
   falseAtts: function falseAtts() {
     var atts = _.omit(this.atts, 'trueLabel', 'falseLabel', 'nullLabel', 'data-schema-key');
     if (this.value === false) {
